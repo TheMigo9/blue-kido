@@ -28,7 +28,7 @@ class MainMenuState extends MusicBeatState
 	public static var psychEngineVersion:String = '0.6.3'; //This is also used for Discord RPC
 	public static var curSelected:Int = 0;
 
-	var menuItems:FlxTypedGroup<FlxSprite>;
+	var menuItems:FlxTypedGroup<FlxSprite>
 	private var camGame:FlxCamera;
 	private var camAchievement:FlxCamera;
 	
@@ -36,8 +36,7 @@ class MainMenuState extends MusicBeatState
 		'story_mode',
 		'freeplay',
 		#if desktop 'mods', #end
-		#if ACHIEVEMENTS_ALLOWED 'awards', #end
-		'credits',
+	
 		#if !switch 'donate', #end
 		'options'
 	];
